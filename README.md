@@ -11,13 +11,13 @@ Project Title
 	PetFinder
 
 Project Description 
-  PetFinder is a web application that matches pets from local animal shelters with people looking to own pets. We will be using HTML, CSS, and Javascript to create the website look and feel and user interactions, and SQL as our relational database to save user information and the pets they own. 
+  - PetFinder is a web application that matches pets from local animal shelters with people looking to own pets. We will be using HTML, CSS, and Javascript to create the website look and feel and user interactions, and SQL as our relational database to save user information and the pets they own. 
 
 Vision Statement
   Come and give your future companion a home!
 
 Motivation
-  Adoption of pets from animal shelters is much better than buying pets from pet shop. To help provide people a way to find their future companion as well as giving pets in animal shelters a permanent home. Our aim is to act as an information bridge between animals and their potential owners.
+ - Adoption of pets from animal shelters is much better than buying pets from pet shop. To help provide people a way to find their future companion as well as giving pets in animal shelters a permanent home. Our aim is to act as an information bridge between animals and their potential owners.
 
 Risks
   - All team members have no prior working experience with each other.
