@@ -1,5 +1,5 @@
 # PetFinder
-PetFinder is a project created and dveloped by a group of University of Colorado at Boulder student. The project is a contribution toward CSCI3308 course in Fall 2015 semester. 
+PetFinder is a project created and developed by a group of University of Colorado at Boulder student. The project is a contribution toward CSCI3308 course in Fall 2015 semester. 
 
 Team Members
   1. Jia Li 
