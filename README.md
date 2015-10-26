@@ -36,3 +36,7 @@ Project Tracking software
  - Name of the software: Trello
  - Link to project tracking software: https://trello.com/b/wGhJnsFi/petfinder
 
+# How To Use
+
+Download the assets and images folder as well as all the html files. This webpage has been run on ubuntu using the command "python -m SimpleHTTPServer 8000" in terminal. Once the server is running type "localhost:8000" in your preferred browser's URL.
+
