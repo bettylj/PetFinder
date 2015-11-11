@@ -1864,6 +1864,7 @@
 
 	#logo {
 		display: inline-block;
+		float: left;
 	}
 
 		#logo h1 {
@@ -1887,6 +1888,32 @@
 			vertical-align: middle;
 			margin: 0 0 0 1.25em;
 		}
+/* Search */
+	#inputbar {
+	  float:left
+	}
+
+	#input {
+	  margin-top: 10px;
+	  margin-left: 5px;
+	  width: 400px;
+	  height: 45px;
+	  text-indent: 2px;
+	  border-radius: 5px;
+	  vertical-align: middle;	
+	}
+
+	#searchbutton {
+	  margin-left: 5px;
+	  margin-top: 10px;
+	  margin-bottom: 5px;
+	}
+
+	#searchicon {
+	  vertical-align: middle;
+	  width: 50px;
+	  height: 50px;
+	}
 
 /* Nav */
 
@@ -1895,6 +1922,7 @@
 		right: 0;
 		top: 0;
 		font-size: 0.9em;
+		float: right;
 	}
 
 		#nav ul li {
@@ -2028,7 +2056,10 @@
 		#banner ul {
 			margin: 0 0 0 2em;
 		}
-
+/* dogbanner */
+	#dogbanner{
+		width: 300px;	
+	}
 /* Footer */
 
 	#footer {
