@@ -13,7 +13,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
-	<body class="right-sidebar">
+	<body class="no-sidebar">
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -25,18 +25,9 @@
 								<h1><a href="main.html">PetFinder</a></h1>
 								<span></span>
 							</div>
-						<!-- Search -->
-                                                        <div id="inputbar">
-                                                        <form id="search">
-                                                                <input id="input">
-                                                        </form>
-                                                        </div>
-                                                        <div id="searchbutton" onclick="/cgi-bin/search.py">
-                                                                <a href="/cgi-bin/search.py"><img id="searchicon" src="http://s7.postimg.org/716v6z5wn/search_icon.png"></a>
-                                                        </div>
 
 						<!-- Nav -->
-							<div id="nav">
+							<nav id="nav">
 								<ul>
 									<li><a href="main.html">Home</a></li>
 									<!--<li>
@@ -55,17 +46,17 @@
 											</li>
 											<li><a href="#">Veroeros feugiat</a></li>
 										</ul>
-									</li>-->
-									<!--<li><a href="left-sidebar.html">Left Sidebar</a></li>-->
-									<li class="current"><a>Profile</a>
+									</li>
+									<li><a href="left-sidebar.html">Left Sidebar</a></li>
+									<li><a href="right-sidebar.html">Right Sidebar</a></li>-->
+									<li class="current"><a href="profile.html">Profile</a>
                                                                                 <ul>
-                                                                                        <li><a href="signup.html">Sign up</a></li>
+                                                                                        <li><a href="profile.html">Sign up</a></li>
                                                                                         <li><a href="profile.html">My Account</a></li>
 										</ul>
-                                                                        </li>
-
+									</li>
 								</ul>
-							</div>
+							</nav>
 
 					</header>
 				</div>
@@ -73,68 +64,25 @@
 			<!-- Main -->
 				<div id="main-wrapper">
 					<div class="container">
-						<div class="row 200%">
-							<div class="8u 12u$(medium)">
-								<div id="content">
+						<div id="content">
 
-									<!-- Content -->
-										<article>
-
-											<h2>Welcome back, Customer</h2>
-
-											<p>General Summary</p>	
-											<h3>Your Info</h3>
-											<p>Name:</p>
-											<p>Address: University of Colorado at Boulder</p>
-											<ul><p>Contacts:</p>
-												<li>Mobile Phone: 303 - XXXXXX</li>
-												<li>Email: xxxx1234@colorado.edu</li>
-											</ul>
-											<h3>Your Pet</h3>
-											<p>Mike: Siberian Husky,   
-											  is adopted by you from Boulder Companion Shop since Nov,2015.</p>
-											
-											<h3>Your Contracts</h3>
-											<ul class="style2">
-												<li><a href="#">Mike: Siberian Husky</a></li>
-
-
-											</ul>
-										</article>
-
-								</div>
-							</div>
-							<div class="4u 12u$(medium)">
-								<div id="sidebar">
-
-									<!-- Sidebar -->
-										<section>
-											<h3>Hello, Customer</h3>
-											<p>Here will be your general information of your account.</p>
-											
-											<footer>
-												<a href="#" class="button icon fa-info-circle">Edit Account</a>
-											</footer>
-										</section>
-
-										<section>
-											<h3>More</h3>
-											<ul class="style2">
-												<li><a href="#">Your Info</a></li>
-												<li><a href="#">Your Pet</a></li>
-												<li><a href="#">Your contract</a></li>
-												<!--<li><a href="#"></a></li>
-												<li><a href="#">Amet ornare in hendrerit in lectus</a></li>
-												<li><a href="#">Semper mod quisturpis nisi</a></li>-->
-											</ul>
-										</section>
-
-								</div>
-							</div>
+							<!-- Registration -->
+							<form>
+							<ul>
+							<li><p>Username:<input id="userid"></p></li>
+							<li><p>Password:<input id="password"></p></li>
+							<li><p>First Name:<input id="firstname"> Last Name:<input id="lastname"></p></li>
+							<li><p>Birthday(month/day/year):</p></li>
+							<li><p>Occupation:<input id="occupation"></p></li>
+							<li><p>Mobile Phone:<input id="mobilephone"></p></li>
+							<li><p>Work Phone:<input id="workphone"></p></li>
+							<li><p>Email:<input id="email"></p></li>
+							<li><p>Address:<input id="address"></p></li>
+							<button>SUBMIT</button>
+							</form>
 						</div>
 					</div>
 				</div>
-
 
 <!--Footer -->
                                 <div id="footer-wrapper">
@@ -216,6 +164,7 @@
                                 </div>
 
                         </div>
+
 
 
 		<!-- Scripts -->
