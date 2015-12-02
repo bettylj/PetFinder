@@ -67,19 +67,45 @@
 						<div id="content">
 
 							<!-- Registration -->
-							<form>
-							<ul>
-							<li><p>Username:<input id="userid"></p></li>
-							<li><p>Password:<input id="password"></p></li>
-							<li><p>First Name:<input id="firstname"> Last Name:<input id="lastname"></p></li>
-							<li><p>Birthday(month/day/year):</p></li>
-							<li><p>Occupation:<input id="occupation"></p></li>
-							<li><p>Mobile Phone:<input id="mobilephone"></p></li>
-							<li><p>Work Phone:<input id="workphone"></p></li>
-							<li><p>Email:<input id="email"></p></li>
-							<li><p>Address:<input id="address"></p></li>
-							<button>SUBMIT</button>
+							
+							<form id="contactform">
+							<p><label>Username:</label>
+							<input id="username" placeholder="username" type="text" name="username" required></p>
+							<p><label>Password:</label>
+							<input id="password" placeholder="password" type="password" name="password" required></p>
+							<p><label>Name:</label>
+							<input id="name" placeholder="first and last name" type="text" name="name" required></p>
+							<fieldset>
+							<label>Birthday(month/day/year):</label>
+							<!--	<select id="birthmonth" name="birthmonth">
+									<option value>Month</option>
+									<option value="01">January</option>
+									<option value="02">February</option>
+									<option value="03">March</option>
+                                                                        <option value="04">April</option>
+                                                                        <option value="05">May</option>
+									<option value="06">June</option>
+                                                                        <option value="07">July</option>
+                                                                        <option value="08">August</option>
+									<option value="09">September</option>
+                                                                        <option value="10">October</option>
+                                                                        <option value="11">November</option>
+									<option value="12">December</option>
+								</select>
+							-->
+								<input id="birthmonth" name="birthmonth" placeholder="January" type="text" required>
+								<input id="birthday" name="birthday" placeholder="Day" maxlength="2" type="text" required>
+								<input id="birthyear" name="birthyear" placeholder="Year" maxlength="4" type="text" required>
+							</fieldset>
+							<p><label>Phone:</label>
+							<input id="contactphone" type="text" name="contactphone" required></p>
+							<p><label>Email:</label>
+							<input id="email" placeholder="example@domain.com" type="text" name="email" required></p>
+							<p><label>Address:</label>
+							<input id="address" placeholder="street, city, state, zipcode" type="text" name="address" required></p>
+							<input class="buttom" name="submit" id="submit" type="submit" value="Sign up"></button>
 							</form>
+							
 						</div>
 					</div>
 				</div>
