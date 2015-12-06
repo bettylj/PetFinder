@@ -63,6 +63,13 @@ $use pet_finder; //used for select database
 
 $show tables; //used for showing all tables under selected database
 
-Under database "pet_finder", there should be two tables, user and pet. 
-In profile.php, change the username as your mysql username at line 77 and the password as your mysql password at line 78. Then you can on ubuntu with command "php -S localhost:8000" in terminal. When the server is running, type "localhost:8000/main.php" in your web browser. Click on profile->signup, you should be able to sign up an account.
+Under database "pet_finder", there should be two tables, user and pet.
+
+In profile.php, at line 77, replace the username with your mysql username. At line 78, replace the password with your mysql password.
+
+Use the following command on ubuntu to run a local server.
+
+$php -S localhost:8000
+
+When the server is running, type "localhost:8000/main.php" in the web browser. Click on profile->signup, you should be able to sign up an account.
 
