@@ -42,7 +42,12 @@ Download the assets and images folder as well as all the html files. This webpag
 
 # How to use SignUp function
 
-Download all the files in PetFinder folder. Make sure to install php5_mysql before run this function. 
-Login to mysql in your local machine and use "create_pet_finder.sql" as source. Then "show databases", the database "pet_finder" should be there. In "pet_finder" there should be two tables, user and pet. 
+Download all the files in PetFinder folder. 
+Make sure to install php5_mysql before run this function. Use the following command to install.
+
+$sudo apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql
+
+If run into problems, try command $sudo apt-get update to update it.
+Login to mysql in your local machine and use "create_pet_finder.sql" as source. show databases", the database "pet_finder" should be there. In "pet_finder" there should be two tables, user and pet. 
 In profile.php, change the username as your mysql username at line 77 and the password as your mysql password at line 78. Then you can on ubuntu with command "php -S localhost:8000" in terminal. When the server is running, type "localhost:8000/main.php" in your web browser. Click on profile->signup, you should be able to sign up an account.
 
