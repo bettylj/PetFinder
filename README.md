@@ -40,3 +40,36 @@ Project Tracking software
 
 Download the assets and images folder as well as all the html files. This webpage has been run on ubuntu using the command "python -m SimpleHTTPServer 8000" in terminal. Once the server is running type "localhost:8000" in your preferred browser's URL.
 
+# How to use SignUp function
+
+Download all the files in PetFinder folder. 
+Make sure to install php5_mysql before run this function. Use the following command to install.
+
+$sudo apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql
+
+If run into problems, try to update it with following command.
+
+$sudo apt-get update 
+
+Login to mysql in your local machine and use "create_pet_finder.sql" with following command.
+
+$source create_pet_finder.sql
+
+Use following commands to select database "pet_finder" and display tables in the database.
+
+$show databases; //used for showing all databases
+
+$use pet_finder; //used for select database
+
+$show tables; //used for showing all tables under selected database
+
+Under database "pet_finder", there should be two tables, user and pet.
+
+In profile.php, at line 77, replace the username with your mysql username. At line 78, replace the password with your mysql password.
+
+Use the following command on ubuntu to run a local server.
+
+$php -S localhost:8000
+
+When the server is running, type "localhost:8000/main.php" in the web browser. Click on profile->signup, you should be able to sign up an account.
+
