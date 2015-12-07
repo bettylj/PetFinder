@@ -64,123 +64,116 @@
 								<h1><a href="main.html">PetFinder</a></h1>
 								<span></span>
 							</div>
-						<!-- Search -->
+						<!-- Search 
       							<div id="inputbar">
         						<form id="search">
           							<input id="input">
         						</form>
-    							</div>
-    							<div id="searchbutton">
-      								<img id="searchicon" src="http://s7.postimg.org/716v6z5wn/search_icon.png">
-    							</div>
 
+    							</div>
+						-->
 						<!-- Nav -->
 							<nav id="nav">
 								<ul>
-									
-									<li class="current"><a href="main.html">Home</a></li>
-									
-									<!--<li>
-										<a href="#">Getting Started</a>
-										<ul>
-											<li><a href="#">Lorem ipsum dolor</a></li>
-											<li><a href="#">Magna phasellus</a></li>
-											<li>
-												<a href="#">Phasellus consequat</a>
-												<ul>
-													<li><a href="#">Lorem ipsum dolor</a></li>
-													<li><a href="#">Phasellus consequat</a></li>
-													<li><a href="#">Magna phasellus</a></li>
-													<li><a href="#">Etiam dolore nisl</a></li>
-												</ul>
-											</li>
-											<li><a href="#">Veroeros feugiat</a></li>
-										</ul>
-									</li>
-									<li><a href="left-sidebar.html">Pet Repo</a></li>
-									<li><a href="right-sidebar.html">Helpful Websites</a></li>
-									-->
-									<li><a href="no-sidebar.html">Profile</a></li>
+									<li><a href="main.html">Home</a></li>
+									<li class="current" id="adopt"><a href="#">Adopt</a></li>
+									<li><a>Profile</a>
+                                                                                <ul>
+                                                                                        <li><a href="signup.html">Sign up</a></li>
+                                                                                        <li><a href="profile.html">My Account</a></li>
+                                                                                </ul>
+                                                                        </li>
+
 								</ul>
 							</nav>
 
 					</header>
 				</div>
-
+			<br>
 			<!-- Banner -->
-				<div id="banner-wrapper">
+			<!--	<div id="banner-wrapper">
 					<div id="banner" class="box container">
 						<div class="row">
 							<div class="7u 12u(medium)">
 								<h2>Welcome to PetFinder</h2>
 								<p>Come and Give Your Future Companion a Home!</p>
 							</div>
-							<div class="5u 12u(medium)">
-								<!--<ul>
-									<li><a href="#" class="button big icon fa-arrow-circle-right">Ok let's go</a></li>
-									<li><a href="#" class="button alt big icon fa-question-circle">More info</a></li>
-								</ul>-->
+							<div>
 								<img id="dogbanner" src="images/dogbanner.gif">
 							</div>
 						</div>
 					</div>
 				</div>
+			-->	
 			<!-- result -->
 				 <div id="main-wrapper">
-                                        <div class="container">
-                                                <div class="row 200%">
-						<div class="4u 12u(medium)">
-						
-<div id="pf-api-data">
-    <p>Your browser does not support the JavaScript APIs required to use this script. Sorry.</p>
-</div>
-
-<div data-petfinder-app="aside"></div>
-<div data-petfinder-app="main">Enter your developer key and a shelter ID in the box above to get started.</div>
-
-<div data-petfinder-template="all" hidden>
-    <div class="{{classes}}">
-        <div data-petfinder-img-container>
-            <img src="{{photo.1.medium}}">
-        </div>
-        <h2>{{name}}</h2>
-        <p><a data-petfinder-async href="{{url.pet}}">View Full Profile</a></p>
-        <hr>
-    </div>
-</div>
-
-<div data-petfinder-template="one" hidden>
-    <p><a data-petfinder-async href="{{url.all}}">&larr; Back to Full List</a></p>
-    <div data-petfinder-img-container>
-        <div data-petfinder-img></div>
-        <p>
-            <a data-petfinder-img-toggle="{{photo.1.large}}" href="#"><img src="{{photo.1.thumbnail.large}}"></a>&nbsp;
-            <a data-petfinder-img-toggle="{{photo.2.large}}" href="#"><img src="{{photo.2.thumbnail.large}}"></a>&nbsp;
-            <a data-petfinder-img-toggle="{{photo.3.large}}" href="#"><img src="{{photo.3.thumbnail.large}}"></a>
-        </p>
-    </div>
-    <h2>{{name}}</h2>
-    <p>
-        Age: {{age}}<br>
-        Gender: {{gender}}<br>
-        Size: {{size}}
-    </p>
-    <div>{{description}}</div>
-</div>
-<div data-petfinder-template="aside-all" hidden>
-    <strong>Age:</strong>
-    {{checkbox.ages.toggle}}
-
-    <strong>Size:</strong>
-    {{checkbox.sizes}}
-
-    <strong>Gender:</strong>
-    {{checkbox.genders}}
-
-    <strong>Breeds:</strong>
-    {{checkbox.breeds.toggle}}
-</div>
-						</div>
+					<div class="container" >
+                        			<div class="row 200%" >
+							<!--						
+							<div id="pf-api-data">
+								<p>Your browser does not support the JavaScript APIs required to use this script. Sorry.</p>
+							</div>
+							-->
+							<div class="hider"><span>Filter -</span></div>
+							<div data-petfinder-app="aside" style="width:1000px"></div>
+							<div data-petfinder-app="main" style="width:1000px"></div>
+							<div data-petfinder-template="all" style="width:1000px"hidden>
+								<div class="{{classes}}" style="width:1000px">
+									<div data-petfinder-img-container>
+										<img src="{{photo.1.medium}}">
+									</div>
+									<h2>{{name}}</h2>
+									<p>{{age}},{{size}},{{breeds}}<p>
+									<p><a data-petfinder-async href="{{url.pet}}">View Full Profile</a></p>
+									
+									<hr>
+								</div>
+							</div>
+							<div data-petfinder-template="one" style="width:1000px" hidden>
+								<p><a data-petfinder-async href="{{url.all}}">&larr; Back to Full List</a></p>
+								<div data-petfinder-img-container>
+									<div data-petfinder-img></div>
+									<p>
+										<a data-petfinder-img-toggle="{{photo.1.large}}" href="#"><img src="{{photo.1.thumbnail.large}}"></a>&nbsp;
+										<a data-petfinder-img-toggle="{{photo.2.large}}" href="#"><img src="{{photo.2.thumbnail.large}}"></a>&nbsp;
+										<a data-petfinder-img-toggle="{{photo.3.large}}" href="#"><img src="{{photo.3.thumbnail.large}}"></a>
+									</p>
+								</div>
+								<h2>{{name}}</h2>
+								<p>
+									Age: {{age}}<br>
+									Gender: {{gender}}<br>
+									Size: {{size}}
+								</p>
+								<div>{{description}}</div>
+							</div>
+							
+							<div class="collapsible">	
+							<div data-petfinder-template="aside-all" style="width:1000px" hidden>
+								<div class="row">
+								<div id="grid-third">
+								<strong>Age:</strong>
+								{{checkbox.ages.toggle}}
+								</div>
+								<div id="grid-third">
+								<strong>Size:</strong>
+								{{checkbox.sizes}}
+								</div>
+								
+	                                                        
+                                                                <div id="grid-third">
+								<strong>Gender:</strong>
+								{{checkbox.genders}}
+								</div>
+								</div>	
+								<div>
+								<strong>Breeds:</strong>
+								{{checkbox.breeds.toggle}}
+								</div>
+							</div>
+						 		
+							</div>
+	
 						</div>
 					</div>
 				</div>
@@ -196,8 +189,8 @@
 									<section class="widget links">
 										<h3>PetFinder</h3>
 										<ul class="style2">
-											<li><a href="#">Quick Search</a></li>
-											<li><a href="#">Optimized Search</a></li>
+											<li><a href="search.html">Quick Search</a></li>
+											<li><a href="search.html">Optimized Search</a></li>
 											<li><a href="#">Local Hosts</a></li>
 											<li><a href="#"></a></li>
 											<li><a href="#"></a></li>
@@ -279,7 +272,19 @@
                 	<script src="/js/petfinderAPI4everybody.js"></script>
         	        <script src="/js/petfinderSort.js"></script>
 	                <script src="/js/petfinderImgToggle.js"></script>
+			<script>
+			$(".hider").click(function(){
+				$hider = $(this);
+				$collapsible = $hider.next();
+				$collapsible.slideToggle(500, function(){
+					$hider.text(function(){
+						return $collapsible.is(":visible") ? "Filter -" : "Filter +";
+					});
+				});
+			});
 
+
+			</script>
 			<script>
                         ;(function (window, document, undefined) {
 
@@ -290,9 +295,9 @@
                                 if ( !supports ) return;
 
                                 // Create form for demo page
-                                var apiData = document.querySelector( '#pf-api-data' );
+                                /*var apiData = document.querySelector( '#pf-api-data' );
                                 var form =
-                                        /*'<form>' +
+                                        '<form>' +
                                                 '<div>' +
                                                         '<label for="key">Developer Key (<a href="https://www.petfinder.com/developers/api-key">get your key</a>)</label>' +
                                                         '<input name="key" id="pf-api-key" type="text" value="6796268155cec254719a4e0bca3da0cf">' +
@@ -301,15 +306,16 @@
                                                         '<label for="shelter-id">Shelter ID</label>' +
                                                         '<input name="shelter-id" id="pf-shelter-id" type="text" value="RI77">' +
                                                 '</div>' +
-                                        '</form>' +*/
+                                        '</form>' +
                                         '<button id="pf-fetch-api">Fetch API Data</button>';
-                                apiData.innerHTML = form;
+                                apiData.innerHTML = form;*/
 
                                 // Fetch API Data when form button is clicked
-                                var submit = document.querySelector( '#pf-fetch-api' );
-                                submit.addEventListener( 'click', function () {
+                                //var submit = document.querySelector( '#adopt' );
+                                //submit.addEventListener( 'click', function () {
+				window.addEventListener('onchange', function(){
                                         var key = '6796268155cec254719a4e0bca3da0cf';
-                                        var shelter = 'RI77';
+                                        var shelter = 'RI77'
                                         	petfinderAPI.init({
                                                 	key: key,
                                                 	shelter: shelter,

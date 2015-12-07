@@ -61,6 +61,7 @@
 	.container {
 		margin-left: auto;
 		margin-right: auto;
+		padding-left: 10px;
 	}
 
 	.container.\31 25\25 {
@@ -1910,9 +1911,9 @@
 	}
 
 	#searchicon {
-	  vertical-align: middle;
-	  width: 50px;
-	  height: 50px;
+	  margin-left: 5px;
+	  margin-top: 10px;
+	  margin-right: 10px;
 	}
 
 /* Nav */
@@ -2060,6 +2061,37 @@
 	#dogbanner{
 		width: 300px;	
 	}
+/* filter */
+	#grid-half{
+		width: 50%;
+	}
+	#grid-thrid{
+		width: 33.33%
+	}
+	.container .hider{
+		border-radius: 5px;
+		width: 80px;
+		height: auto;
+		background: #444;
+		font-weight: bold;
+		text-align: center;
+		color: white;
+		padding: 5px;
+		cursor: pointer;	
+		float: left;
+	}	
+	.container .collapsible{
+		display: none;
+		visibility: visible;
+		padding: 5px;
+	}
+
+
+
+
+
+
+	
 /* Footer */
 
 	#footer {
@@ -2251,7 +2283,7 @@
 			#sidebar > :last-child {
 				margin-bottom: 0 !important;
 			}
-
+			
 		/* Footer */
 
 			#copyright {
@@ -2270,6 +2302,8 @@
 				-ms-transition: -ms-transform 0.5s ease;
 				transition: transform 0.5s ease;
 				padding-bottom: 1px;
+				margin-left: 5px;
+				margin-right: 5px;
 			}
 
 			#navToggle {
