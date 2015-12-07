@@ -2066,7 +2066,8 @@
 		width: 50%;
 	}
 	#grid-thrid{
-		width: 33.33%
+		width: 33.33%;
+		min-width; 300;
 	}
 	.container .hider{
 		border-radius: 5px;
@@ -2302,8 +2303,6 @@
 				-ms-transition: -ms-transform 0.5s ease;
 				transition: transform 0.5s ease;
 				padding-bottom: 1px;
-				margin-left: 5px;
-				margin-right: 5px;
 			}
 
 			#navToggle {

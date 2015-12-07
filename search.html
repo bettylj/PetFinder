@@ -21,10 +21,12 @@
 
                         /*  Sets body width */
                         body {
-                                max-width: 40em;
-                                width: 88%;
+                                /*max-width: 40em;*/
+                                width: 80em;
                                 margin-left: auto;
                                 margin-right: auto;
+				display: block;
+				border-radius: 5px;
                         }
 
                         #pf-api-data {
@@ -33,6 +35,7 @@
                                 padding: 0.9375em;
                                 border: 0.0725em solid #e5e5e5;
                                 border-radius: 0.0725em;
+				display: block;
                         }
 
                         label,
@@ -116,15 +119,15 @@
 							-->
 							<div class="hider"><span>Filter -</span></div>
 							<div data-petfinder-app="aside" style="width:1000px"></div>
-							<div data-petfinder-app="main" style="width:1000px"></div>
-							<div data-petfinder-template="all" style="width:1000px"hidden>
-								<div class="{{classes}}" style="width:1000px">
-									<div data-petfinder-img-container>
-										<img src="{{photo.1.medium}}">
+							<div data-petfinder-app="main" class="row"style="width:1000px"></div>
+							<div data-petfinder-template="all" class="row" style="width:1000px"hidden>
+								<div class="{{classes}}" id="grid-third">
+									<div data-petfinder-img-container id="grid-third" style="margin-left: auto; margin-right: auto; padding: 20px;">
+										<img src="{{photo.1.medium}}" style="height:150px; min-width: 100px; border-radius: 5px;">
 									</div>
-									<h2>{{name}}</h2>
-									<p>{{age}},{{size}},{{breeds}}<p>
-									<p><a data-petfinder-async href="{{url.pet}}">View Full Profile</a></p>
+									<h3 style="text-align: center;">{{name}}</h3>
+									<p style="text-align: center;">{{breeds}}<p>
+									<p style="text-align: center;"><a data-petfinder-async href="{{url.pet}}">View Full Profile</a></p>
 									
 									<hr>
 								</div>
