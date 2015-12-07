@@ -82,8 +82,8 @@
 									<li class="current" id="adopt"><a href="#">Adopt</a></li>
 									<li><a>Profile</a>
                                                                                 <ul>
-                                                                                        <li><a href="signup.html">Sign up</a></li>
-                                                                                        <li><a href="profile.html">My Account</a></li>
+                                                                                        <li><a href="signup.php">Sign up</a></li>
+                                                                                        <li><a href="profile.php">My Account</a></li>
                                                                                 </ul>
                                                                         </li>
 
@@ -318,7 +318,7 @@
                                 //submit.addEventListener( 'click', function () {
 				window.addEventListener('load', function(){
                                         var key = '6796268155cec254719a4e0bca3da0cf';
-                                        var shelter = 'RI77'
+                                        var shelter = 'CO52'
                                         	petfinderAPI.init({
                                                 	key: key,
                                                 	shelter: shelter,
@@ -328,6 +328,8 @@
                                                 }
                                         });
                                 }, false);
+				/*window.addEventListener('onchange', function(){
+					petfinderSort.sortPet())*/
 
                         })(window, document);
 
