@@ -40,15 +40,22 @@ Project Tracking software
  - 
  
 # How To Run the website on VM
- 1. Installing Packages in order to run API calls and website.
+ 1. Clone this repository into your prefered directory.
+  * 'git clone http://github.com/bettylj/PetFinder.git'
+
+ 2. Installing Packages in order to run API calls and website.
  - follow this.
   * **NPM:** 'npm install cferdinandi/petfinderAPI4everybody'
   * [Node.js](http://nodejs.org)
   * [Gulp](http://gulpjs.com) `sudo npm install -g gulp`
   * **Start**
-	1. In bash/terminal/command line, `cd` into your project directory.
+	1. In bash/terminal/command line, `cd` into the project directory.
 	2. Run `npm install` to install required files.
- 
+ 3. After installing packages, you should be able to run the website.
+  * in terminal, 'cd' to the repo directory
+  * start php localserver, '$php -S localhost:8000'
+  * in Your Browser url-address box, Chrome is recommended, 'localhost:8000/main.php'
+  * after this, you will be in our webpages.
 
 # How to use SignUp function
 
