@@ -37,7 +37,14 @@ Project Tracking software
  - Link to project tracking software: https://trello.com/b/wGhJnsFi/petfinder
 
 # Repo Organization
- - 
+  * Folder Apigen has all results of autodocumentation
+  * Folder cgi-bin is used for pet search function
+  * Folder assets and images include the website's templates and pictures
+  * README includes project introduction, repo organization and How-to.
+  * PetFinder_Part1,2,3,5,6 pdf files are written documents according to 3308 project parts requirements.
+  * TestCasesofPetFinder.pdf file records the test cases results.
+  * create_pet_finder.sql is mysql file for connect signed up user information with local database
+  * The rest .html fils and .php files are the website main parts.
  
 # How To Run the website on VM
  1. Clone this repository into your prefered directory.
@@ -57,36 +64,27 @@ Project Tracking software
   * after this, you will be in our webpages.
 
 # How to use SignUp function
+ 
+ 1. Install php5_mysql in order to connect user information with local database.
+  * `$sudo apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql`
+  * If run into problems, try to update it with following command. 
+  * `$sudo apt-get update `
 
-Download all the files in PetFinder folder. 
-Make sure to install php5_mysql before run this function. Use the following command to install.
+ 2. Go to file profile.php
+  * @line57, replace the username with mysql username.
+  * @line58, replace the password with your mysql password.
 
-`$sudo apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql`
+ 3. In petfinder folder
+  * Login to mysql, `$mysql -u root -p`
+  * Use "create_pet_finder.sql”, `$source create_pet_finder.sql`
 
-If run into problems, try to update it with following command.
+ 4. Finish 3 steps how to run the website on VM
 
-`$sudo apt-get update `
+ 5. Click on profile->signup, enter every blank and submit.
+  * Should see the profile information then
 
-Login to mysql in your local machine and use "create_pet_finder.sql" with following command.
-
-`$source create_pet_finder.sql`
-
-Use following commands to select database "pet_finder" and display tables in the database.
-
-`$show databases;` //used for showing all databases
-
-`$use pet_finder;` //used for select database
-
-`$show tables;` //used for showing all tables under selected database
-
-Under database "pet_finder", there should be two tables, user and pet.
-
-In profile.php, at line 77, replace the username with your mysql username. At line 78, replace the password with your mysql password.
-
-Use the following command on ubuntu to run a local server.
-
-`$php -S localhost:8000`
-
-When the server is running, type "localhost:8000/main.php" in the web browser. Click on profile->signup, you should be able to sign up an account.
-
-
+ 6. In petfinder folder
+  * Login to mysql, `$mysql -u root -p`
+  * Show databases, `$show databases;` 
+  * Use pet_finder, `$use pet_finder;`
+  * Show tables and select info, `$show tables;` then `$select * from user;`, should see the user info you submit.
