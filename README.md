@@ -40,10 +40,11 @@ Project Tracking software
  - 
  
 # How To Use the website
-
+ -
+ 
 # How To Use Search Function
-
-	
+ -
+ 
 # How To Use
 
 Download the assets and images folder as well as all the html files. This webpage has been run on ubuntu using the command "python -m SimpleHTTPServer 8000" in terminal. Once the server is running type "localhost:8000" in your preferred browser's URL.
@@ -81,4 +82,4 @@ $php -S localhost:8000
 
 When the server is running, type "localhost:8000/main.php" in the web browser. Click on profile->signup, you should be able to sign up an account.
 
-[![ScreenShot](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](http://youtu.be/vt5fpE0bzSY)
+
