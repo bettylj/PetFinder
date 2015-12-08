@@ -66,9 +66,8 @@ Project Tracking software
 # How to use SignUp function
  
  1. Install php5_mysql in order to connect user information with local database.
-  * `$sudo apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql`
-  * If run into problems, try to update it with following command. 
-  * `$sudo apt-get update `
+  * `sudo apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql`
+  * If run into problems, try to update it with command `sudo apt-get update `
 
  2. Go to file profile.php
   * @line57, replace the username with mysql username.
@@ -76,7 +75,7 @@ Project Tracking software
 
  3. In petfinder folder
   * Login to mysql, `$mysql -u root -p`
-  * Use "create_pet_finder.sql”, `$source create_pet_finder.sql`
+  * Use "create_pet_finder.sql”, `source create_pet_finder.sql`
 
  4. Finish 3 steps how to run the website on VM
 
@@ -84,7 +83,7 @@ Project Tracking software
   * Should see the profile information then
 
  6. In petfinder folder
-  * Login to mysql, `$mysql -u root -p`
-  * Show databases, `$show databases;` 
-  * Use pet_finder, `$use pet_finder;`
-  * Show tables and select info, `$show tables;` then `$select * from user;`, should see the user info you submit.
+  * Login to mysql, `mysql -u root -p`
+  * Show databases, `show databases;` 
+  * Use pet_finder, `use pet_finder;`
+  * Show tables and select info, `show tables;` then `select * from user;`, the user information submitted should be there.
