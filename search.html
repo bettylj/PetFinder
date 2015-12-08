@@ -64,7 +64,7 @@
 
 						<!-- Logo -->
 							<div id="logo">
-								<h1><a href="main.html">PetFinder</a></h1>
+								<h1><a href="main.php">PetFinder</a></h1>
 								<span></span>
 							</div>
 						<!-- Search 
@@ -78,7 +78,7 @@
 						<!-- Nav -->
 							<nav id="nav">
 								<ul>
-									<li><a href="main.html">Home</a></li>
+									<li><a href="main.php">Home</a></li>
 									<li class="current" id="adopt"><a href="#">Adopt</a></li>
 									<li><a>Profile</a>
                                                                                 <ul>
@@ -144,11 +144,25 @@
 								</div>
 								<h2>{{name}}</h2>
 								<p>
+									Breed: {{breeds}}<br>
 									Age: {{age}}<br>
 									Gender: {{gender}}<br>
 									Size: {{size}}
 								</p>
+								<strong>Description:</strong>
 								<div>{{description}}</div>
+								<strong>Contact:</strong>
+								<div>
+									<p>
+									Name: {{contact.name}}<br>
+									Email: {{contact.email}}<br>
+									Phone: {{contact.phone}}<br>
+									Fax:	{{contact.fax}}<br>
+									Address: {{contact.address1}}<br>
+										{{contact.address2}}<br>
+										{{contact.city}},{{contact.state}},{{contact.zip}}
+									</p>
+								</div>
 							</div>
 							
 							<div class="collapsible">	
@@ -156,7 +170,7 @@
 								<div class="row">
 								<div id="grid-third">
 								<strong>Age:</strong>
-								{{checkbox.ages.toggle}}
+								{{checkbox.ages}}
 								</div>
 								<div id="grid-third">
 								<strong>Size:</strong>
@@ -171,7 +185,7 @@
 								</div>	
 								<div>
 								<strong>Breeds:</strong>
-								{{checkbox.breeds.toggle}}
+								{{checkbox.breeds}}
 								</div>
 							</div>
 						 		
