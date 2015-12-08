@@ -52,7 +52,7 @@ Project Tracking software
 	2. Run `npm install` to install required files.
  3. After installing packages, you should be able to run the website.
   * in terminal, 'cd' to the repo directory
-  * start php localserver, '$php -S localhost:8000'
+  * start php localserver, 'php -S localhost:8000'
   * in Your Browser url-address box, Chrome is recommended, 'localhost:8000/main.php'
   * after this, you will be in our webpages.
 
