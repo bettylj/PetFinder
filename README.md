@@ -39,15 +39,16 @@ Project Tracking software
 # Repo Organization
  - 
  
-# How To Use the website
- -
+# How To Run the website on VM
+ 1. Installing Packages in order to run API calls and website.
+ - follow this.
+  * **NPM:** 'npm install cferdinandi/petfinderAPI4everybody'
+  * [Node.js](http://nodejs.org)
+  * [Gulp](http://gulpjs.com) `sudo npm install -g gulp`
+  * **Start**
+	1. In bash/terminal/command line, `cd` into your project directory.
+	2. Run `npm install` to install required files.
  
-# How To Use Search Function
- -
- 
-# How To Use
-
-Download the assets and images folder as well as all the html files. This webpage has been run on ubuntu using the command "python -m SimpleHTTPServer 8000" in terminal. Once the server is running type "localhost:8000" in your preferred browser's URL.
 
 # How to use SignUp function
 
