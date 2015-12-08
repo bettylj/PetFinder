@@ -72,10 +72,15 @@
 
 			<!-- Main -->
 			<?php
+			/*
+			 * @author: Jia Li, Girish Ramkumar, Steve Tubhongnee, Sophia Raji
+			 * @since 9/20/2015
+			 * @license html5up.net/license
+			 */
 date_default_timezone_set('America/Denver');
 $servername = "localhost";
-$username = "root";	//replace with your username
-$password = "root";	//replace with your password
+$username = "root";	//@var username
+$password = "root";	//@var password
 $dbname = "pet_finder";
 $con = mysql_connect($servername, $username , $password);
 if (!$con)
