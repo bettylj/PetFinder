@@ -133,9 +133,7 @@ mysql_close($con)
 												<li><a href="#">Your Info</a></li>
 												<li><a href="#">Your Pet</a></li>
 												<li><a href="#">Your contract</a></li>
-												<!--<li><a href="#"></a></li>
-												<li><a href="#">Amet ornare in hendrerit in lectus</a></li>
-												<li><a href="#">Semper mod quisturpis nisi</a></li>-->
+												
 											</ul>
 										</section>
 
