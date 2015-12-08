@@ -30,6 +30,7 @@
 							<nav id="nav">
 								<ul>
 									<li><a href="main.php">Home</a></li>
+									<li><a href="search.html">Adopt</a></li>
 									<li class="current"><a>Profile</a>
                                                                                 <ul>
                                                                                         <li><a href="signup.php">Sign up</a></li>
@@ -51,41 +52,31 @@
 							<!-- Registration -->
 							
 							<form action="profile.php" method="post" id="contactform">
-							<p><label>Username:</label>
-							<input id="username" placeholder="username" type="text" name="username" required></p>
-							<p><label>Password:</label>
-							<input id="password" placeholder="password" type="password" name="password" required></p>
-							<p><label>Name:</label>
-							<input id="firstname" placeholder="first name" type="text" name="firstname" required></p>
-                                                        <input id="lastname" placeholder="last name" type="text" name="lastname" required></p>
+							<label>Username:</label>
+							<input id="username" placeholder="username" type="text" name="username" style="width:400px" required>
+							<label>Password:</label>
+							<input id="password" placeholder="password" type="password" name="password" style="width:400px" required>
+							<label>Name:</label>
+							<div style="display: block">
+							<div style="float:left; padding-right:10px;">
+								<input id="firstname" placeholder="first name" type="text" name="firstname" style="width:300px;"required>
+							</div>
+							
+							<div style="float:left">
+                                                        	<input id="lastname" placeholder="last name" type="text" name="lastname" style="width:300px;" required>
+							</div>
+							</div>
 							<fieldset>
 							<label>Birthday(month/day/year):</label>
-							<!--	<select id="birthmonth" name="birthmonth">
-									<option value>Month</option>
-									<option value="01">January</option>
-									<option value="02">February</option>
-									<option value="03">March</option>
-                                                                        <option value="04">April</option>
-                                                                        <option value="05">May</option>
-									<option value="06">June</option>
-                                                                        <option value="07">July</option>
-                                                                        <option value="08">August</option>
-									<option value="09">September</option>
-                                                                        <option value="10">October</option>
-                                                                        <option value="11">November</option>
-									<option value="12">December</option>
-								</select>
-							-->
-								<input id="birthmonth" name="birthmonth" placeholder="January" type="text" required>
-								<input id="birthday" name="birthday" placeholder="Day" maxlength="2" type="text" required>
-								<input id="birthyear" name="birthyear" placeholder="Year" maxlength="4" type="text" required>
+								<input id="birthday" name="birthday" placeholder="10/30/1990" maxlength="10" type="text" style="width:400px" required>
 							</fieldset>
-							<p><label>Phone:</label>
-							<input id="phone" type="text" name="phone" required></p>
-							<p><label>Email:</label>
-							<input id="email" placeholder="example@domain.com" type="text" name="email" required></p>
-							<p><label>Address:</label>
-							<input id="address" placeholder="street, city, state, zipcode" type="text" name="address" required></p>
+							<label>Phone:</label>
+							<input id="phone" placeholder="3031234567"type="text" name="phone" style="width:400px;" required>
+							<label>Email:</label>
+							<input id="email" placeholder="example@domain.com" type="text" name="email" style="width:600px"required>
+							<label>Address:</label>
+							<input id="address" placeholder="street, city, state, zipcode" type="text" name="address" style="width:600px" required>
+							<br>
 							<input class="buttom" name="submit" id="submit" type="submit" value="Sign up"></button>
 							</form>
 							
@@ -103,8 +94,8 @@
                                                                         <section class="widget links">
                                                                                 <h3>PetFinder</h3>
                                                                                 <ul class="style2">
-                                                                                        <li><a href="#">Quick Search</a></li>
-                                                                                        <li><a href="#">Optimized Search</a></li>
+                                                                                        <li><a href="search.html">Quick Search</a></li>
+                                                                                        <li><a href="search.html">Optimized Search</a></li>
                                                                                         <li><a href="#">Local Hosts</a></li>
                                                                                         <li><a href="#"></a></li>
                                                                                         <li><a href="#"></a></li>
@@ -119,7 +110,7 @@
                                                                                 <h3>Let us tell you</h3>
                                                                                 <ul class="style2">
                                                                                         <li><a href="#">About us</a></li>
-                                                                                        <li><a href="#">Get Started</a></li>
+                                                                                        <li><a href="search.html">Get Started</a></li>
                                                                                         <li><a href="#">Contracts</a></li>
                                                                                         <li><a href="#">Policies</a></li>
                                                                                         <li><a href="#"></a></li>
