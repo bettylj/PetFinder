@@ -74,7 +74,7 @@ Project Tracking software
   * @line58, replace the password with your mysql password.
 
  3. In petfinder folder
-  * Login to mysql, `$mysql -u root -p`
+  * Login to mysql, `mysql -u root -p`
   * Use "create_pet_finder.sql”, `source create_pet_finder.sql`
 
  4. Finish 3 steps how to run the website on VM
