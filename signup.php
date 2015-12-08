@@ -30,26 +30,7 @@
 							<nav id="nav">
 								<ul>
 									<li><a href="main.php">Home</a></li>
-									<!--<li>
-										<a href="#">Dropdown</a>
-										<ul>
-											<li><a href="#">Lorem ipsum dolor</a></li>
-											<li><a href="#">Magna phasellus</a></li>
-											<li>
-												<a href="#">Phasellus consequat</a>
-												<ul>
-													<li><a href="#">Lorem ipsum dolor</a></li>
-													<li><a href="#">Phasellus consequat</a></li>
-													<li><a href="#">Magna phasellus</a></li>
-													<li><a href="#">Etiam dolore nisl</a></li>
-												</ul>
-											</li>
-											<li><a href="#">Veroeros feugiat</a></li>
-										</ul>
-									</li>
-									<li><a href="left-sidebar.html">Left Sidebar</a></li>
-									<li><a href="right-sidebar.html">Right Sidebar</a></li>-->
-									<li class="current"><a href="profile.php">Profile</a>
+									<li class="current"><a>Profile</a>
                                                                                 <ul>
                                                                                         <li><a href="signup.php">Sign up</a></li>
                                                                                         <li><a href="profile.php">My Account</a></li>
@@ -60,26 +41,54 @@
 
 					</header>
 				</div>
-
+			<br>
 			<!-- Main -->
+
 				<div id="main-wrapper">
 					<div class="container">
 						<div id="content">
 
 							<!-- Registration -->
-							<form action="profile.php" method="post">
-							<li><p>Username:<input name="username"></p></li>
-							<li><p>Password:<input name="password" type="password"></p></li>
-							<li><p>First Name:<input name="firstname"> Last Name:<input name="lastname"></p></li>
-							<li><p>Birthday(month/day/year):<input name="dob"></p></li>
-							<!-- <li><p>Occupation:<input id="occupation"></p></li> -->
-							<li><p>Phone:<input name="phone"></p></li>
-							<!-- <li><p>Work Phone:<input id="workphone"></p></li> -->
-							<li><p>Email:<input name="email"></p></li>
-							<li><p>Address:<input name="address"></p></li>
-
-							<input type="submit" />
+							
+							<form action="profile.php" method="post" id="contactform">
+							<p><label>Username:</label>
+							<input id="username" placeholder="username" type="text" name="username" required></p>
+							<p><label>Password:</label>
+							<input id="password" placeholder="password" type="password" name="password" required></p>
+							<p><label>Name:</label>
+							<input id="firstname" placeholder="first name" type="text" name="firstname" required></p>
+                                                        <input id="lastname" placeholder="last name" type="text" name="lastname" required></p>
+							<fieldset>
+							<label>Birthday(month/day/year):</label>
+							<!--	<select id="birthmonth" name="birthmonth">
+									<option value>Month</option>
+									<option value="01">January</option>
+									<option value="02">February</option>
+									<option value="03">March</option>
+                                                                        <option value="04">April</option>
+                                                                        <option value="05">May</option>
+									<option value="06">June</option>
+                                                                        <option value="07">July</option>
+                                                                        <option value="08">August</option>
+									<option value="09">September</option>
+                                                                        <option value="10">October</option>
+                                                                        <option value="11">November</option>
+									<option value="12">December</option>
+								</select>
+							-->
+								<input id="birthmonth" name="birthmonth" placeholder="January" type="text" required>
+								<input id="birthday" name="birthday" placeholder="Day" maxlength="2" type="text" required>
+								<input id="birthyear" name="birthyear" placeholder="Year" maxlength="4" type="text" required>
+							</fieldset>
+							<p><label>Phone:</label>
+							<input id="phone" type="text" name="phone" required></p>
+							<p><label>Email:</label>
+							<input id="email" placeholder="example@domain.com" type="text" name="email" required></p>
+							<p><label>Address:</label>
+							<input id="address" placeholder="street, city, state, zipcode" type="text" name="address" required></p>
+							<input class="buttom" name="submit" id="submit" type="submit" value="Sign up"></button>
 							</form>
+							
 						</div>
 					</div>
 				</div>
@@ -124,7 +133,7 @@
                                                                         <section class="widget links">
                                                                                 <h3>Let us help you</h3>
                                                                                 <ul class="style2">
-                                                                                        <li><a href="profile.php">Your Account</a></li>
+                                                                                        <li><a href="profile.html">Your Account</a></li>
                                                                                         <li><a href="#">Your contracts</a></li>
                                                                                         <li><a href="#">Customer Service</a></li>
                                                                                         <li><a href="#"></a></li>

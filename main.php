@@ -25,40 +25,23 @@
 								<h1><a href="main.php">PetFinder</a></h1>
 								<span></span>
 							</div>
-						<!-- Search -->
+						<!-- Search 
       							<div id="inputbar">
         						<form id="search">
           							<input id="input">
         						</form>
     							</div>
     							<div id="searchbutton" onclick="/cgi-bin/search.py">
-      								<a href="/cgi-bin/search.py"><img id="searchicon" src="http://s7.postimg.org/716v6z5wn/search_icon.png"></a>
+      							<a href="/search.html"><img id="searchicon" src="http://s7.postimg.org/716v6z5wn/search_icon.png"></a>
     							</div>
-
+						-->
 						<!-- Nav -->
 							<nav id="nav">
 								<ul>
 									
 									<li class="current"><a href="main.php">Home</a></li>
-									
-									<!--<li>
-										<a href="#">Getting Started</a>
-										<ul>
-											<li><a href="#">Lorem ipsum dolor</a></li>
-											<li><a href="#">Magna phasellus</a></li>
-											<li>
-												<a href="#">Phasellus consequat</a>
-												<ul>
-													<li><a href="#">Lorem ipsum dolor</a></li>
-													<li><a href="#">Phasellus consequat</a></li>
-													<li><a href="#">Magna phasellus</a></li>
-													<li><a href="#">Etiam dolore nisl</a></li>
-												</ul>
-											</li>
-											<li><a href="#">Veroeros feugiat</a></li>
-										</ul>
-									</li>
-									<li><a href="left-sidebar.html">Pet Repo</a></li>
+									<li><a href="search.html">Adopt</a></li>
+									<!--<li><a href="left-sidebar.html">Pet Repo</a></li>
 									<li><a href="right-sidebar.html">Helpful Websites</a></li>
 									-->
 									<li><a>Profile</a>
@@ -72,7 +55,7 @@
 
 					</header>
 				</div>
-
+				<br>
 			<!-- Banner -->
 				<div id="banner-wrapper">
 					<div id="banner" class="box container">
@@ -147,13 +130,14 @@
 				</div>
 
 			<!-- Main -->
+<!--
 				<div id="main-wrapper">
 					<div class="container">
 						<div class="row 200%">
 							<div class="4u 12u(medium)">
-
+-->
 								<!-- Sidebar -->
-									<div id="sidebar">
+<!--									<div id="sidebar">
 										<section class="widget thumbnails">
 											<h3>Interesting stuff</h3>
 											<div class="grid">
@@ -170,9 +154,9 @@
 
 							</div>
 							<div class="8u 12u(medium) important(medium)">
-
+-->
 								<!-- Content -->
-									<div id="content">
+<!--									<div id="content">
 										<section class="last">
 											<h2>So what's this all about?</h2>
 											<p>This is <strong>PetFinder</strong>, a website designed to help you find your perfect pet. 
@@ -187,7 +171,7 @@
 						</div>
 					</div>
 				</div>
-
+-->
 			<!-- Footer -->
 				<div id="footer-wrapper">
 					<footer id="footer" class="container">
@@ -198,8 +182,8 @@
 									<section class="widget links">
 										<h3>PetFinder</h3>
 										<ul class="style2">
-											<li><a href="#">Quick Search</a></li>
-											<li><a href="#">Optimized Search</a></li>
+											<li><a href="search.html">Quick Search</a></li>
+											<li><a href="search.html">Optimized Search</a></li>
 											<li><a href="#">Local Hosts</a></li>
 											<li><a href="#"></a></li>
 											<li><a href="#"></a></li>
