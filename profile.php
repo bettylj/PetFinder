@@ -25,38 +25,12 @@
 								<h1><a href="main.php">PetFinder</a></h1>
 								<span></span>
 							</div>
-						<!-- Search -->
-                                                        <div id="inputbar">
-                                                        <form id="search">
-                                                                <input id="input">
-                                                        </form>
-                                                        </div>
-                                                        <div id="searchbutton" onclick="/cgi-bin/search.py">
-                                                                <a href="/cgi-bin/search.py"><img id="searchicon" src="http://s7.postimg.org/716v6z5wn/search_icon.png"></a>
-                                                        </div>
 
 						<!-- Nav -->
 							<div id="nav">
 								<ul>
 									<li><a href="main.php">Home</a></li>
-									<!--<li>
-										<a href="#">Dropdown</a>
-										<ul>
-											<li><a href="#">Lorem ipsum dolor</a></li>
-											<li><a href="#">Magna phasellus</a></li>
-											<li>
-												<a href="#">Phasellus consequat</a>
-												<ul>
-													<li><a href="#">Lorem ipsum dolor</a></li>
-													<li><a href="#">Phasellus consequat</a></li>
-													<li><a href="#">Magna phasellus</a></li>
-													<li><a href="#">Etiam dolore nisl</a></li>
-												</ul>
-											</li>
-											<li><a href="#">Veroeros feugiat</a></li>
-										</ul>
-									</li>-->
-									<!--<li><a href="left-sidebar.html">Left Sidebar</a></li>-->
+									<li><a href="search.html">Adopt</a></li>
 									<li class="current"><a>Profile</a>
                                                                                 <ul>
                                                                                         <li><a href="signup.php">Sign up</a></li>
@@ -128,8 +102,7 @@ mysql_close($con)
 												<li>Email: <?php echo $_POST[email] ?></li>
 											</ul>
 											<h3>Your Pet</h3>
-											<p>Mike: Siberian Husky,   
-											  is adopted by you from Boulder Companion Shop since Nov,2015.</p>
+											<p></p> 
 											
 											<h3>Your Contracts</h3>
 											<ul class="style2">
@@ -147,7 +120,7 @@ mysql_close($con)
 									<!-- Sidebar -->
 										<section>
 											<h3>Hello, <?php echo $_POST[username] ?></h3>
-											<p>Here will be your general information of your account.</p>
+											<p></p>
 											
 											<footer>
 												<a href="#" class="button icon fa-info-circle">Edit Account</a>
@@ -183,8 +156,8 @@ mysql_close($con)
                                                                         <section class="widget links">
                                                                                 <h3>PetFinder</h3>
                                                                                 <ul class="style2">
-                                                                                        <li><a href="#">Quick Search</a></li>
-                                                                                        <li><a href="#">Optimized Search</a></li>
+                                                                                        <li><a href="search.html">Quick Search</a></li>
+                                                                                        <li><a href="search.html">Optimized Search</a></li>
                                                                                         <li><a href="#">Local Hosts</a></li>
                                                                                         <li><a href="#"></a></li>
                                                                                         <li><a href="#"></a></li>
