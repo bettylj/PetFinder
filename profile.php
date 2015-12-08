@@ -54,7 +54,7 @@
 date_default_timezone_set('America/Denver');
 $servername = "localhost";
 $username = "root";	//@var username
-$password = "root";	//@var password
+$password = "Stv17091994.";	//@var password
 $dbname = "pet_finder";
 $con = mysql_connect($servername, $username , $password);
 if (!$con)
